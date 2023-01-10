@@ -1,0 +1,59 @@
+.header {
+    background-color: #ABABAB;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 16px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .menu-overlay {
+    position: relative;
+    margin-right: 16px;
+  }
+
+  .toggle {
+    background-color: #ABABAB;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1px;
+    position: relative;
+  }
+
+  .overlay-content {
+    background-color: #ABABAB;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    transform: translateY(8px);
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+
+  .overlay-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .overlay-item {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .overlay-item a {
+    color: #000000;
+    text-decoration: none;
+  }

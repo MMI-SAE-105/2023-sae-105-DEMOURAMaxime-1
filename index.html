@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <header class="header">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" type="image" sizes="16x16" href="public/img/logo_noir.jpg">
+
+<title>Accueil</title>
+<head>
+        <div class="container">
+          <div class="headerlogo logo">
+            <a href="index.html"><img src="public/img/logo_noir-removebg-preview.png" alt="Logo du site"></a>
+          </div>
+          <div class="headermenu-overlay menu-overlay" x-data="{ open: false }">
+            <button @click="open = !open" class="menu-overlaytoggle toggle">
+                <img src="public/img/menu_burger.svg" alt="menu hamburger">
+            </button>
+            <div x-show="open" class="menu-overlaycontent overlay-content">
+              <nav class="menu-overlaynav overlay-nav">
+                <ul class="menu-overlaylist overlay-list">
+                  <li class="menu-overlayitem overlay-item"><a href="#">Accueil</a></li>
+                  <li class="menu-overlayitem overlay-item"><a href="#">Exposition</a></li>
+                  <li class="menu-overlayitem overlay-item"><a href="#">Programmation</a></li>
+                  <li class="menu-overlayitem overlay-item"><a href="#">Billeterie</a></li>
+                  <li class="menu-overlayitem overlay-item"><a href="#">Accès</a></li>
+                  <li class="menu-overlayitem overlay-item"><a href="#"></a></li>
+                  <li class="menu-overlayitem overlay-item"><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+</head>
+<body>
+
+</body>
+</html>
