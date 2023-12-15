@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="icon" type="image" sizes="16x16" href="public/img/logo_noir.jpg">
+
+<title>Programme</title>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="headermenu-overlay menu-overlay" x-data="{ open: false }">
+        <button @click="open = !open" class="menu-overlaytoggle toggle">
+            <img src="public/img/icon/menu_burger.svg" alt="menu burger">
+        </button>
+        <div x-show="open" class="menu-overlaycontent overlay-content">
+          <nav class="menu-overlaynav overlay-nav">
+            <ul class="menu-overlaylist overlay-list">
+              <li class="menu-overlayitem overlay-item"><a href="index.html">Accueil</a></li>
+              <li class="menu-overlayitem overlay-item"><a href="exposition.html">Exposition</a></li>
+              <li class="menu-overlayitem overlay-item"><a href="programme.html">Programmation</a></li>
+              <li class="menu-overlayitem overlay-item"><a href="billeterie.html">Billeterie</a></li>
+              <li class="menu-overlayitem overlay-item"><a href="accès.html">Accès</a></li>
+              <li class="menu-overlayitem overlay-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+              <button href="#"> <img src="public/img/icon/menu_person.svg" alt="menu client"> </button>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <footer class="footer">
+    Copyright © 2023 Exposition surréaliste japonaise
+     Plan du site | Politique de confidentialité | Contact
+  </footer>
+</body>
+</html>
